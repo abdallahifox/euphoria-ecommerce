@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;800&family=Poppins:wght@200;300;500;600&family=Roboto:wght@100;200;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.appContainer{
+    @apply   max-w-[1440px] mx-auto py-4 px-2 
+}
+
+.error-message{
+    @apply text-red-600 capitalize text-sm font-bold tracking-widest font-mono
+}
+.invalid{
+    @apply w-full border border-red-600 focus:outline-red-600 focus:border-red-600 h-10 text-sm indent-1 p-3 rounded
+}
+
+
+.input-style{
+    @apply w-full border border-gray focus:outline-primary focus:border-primary h-10 text-sm indent-1 p-3 rounded
+}
