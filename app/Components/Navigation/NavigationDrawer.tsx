@@ -38,7 +38,7 @@ function NavigationDrawer({ isOpen, closeDrawer }: open) {
       <div className="mt-5 flex flex-col items-start gap-y-5">
         {NavigationLinks.map((link, i) => {
           return (
-            <Link key={i} href={link} onClick={() => closeDrawer()}>
+            <Link key={i} href={'/category/'+link} onClick={() => closeDrawer()}>
               <span className="text-md capitalize text-dark-gray transition hover:text-primary">
                 {link}
               </span>
